@@ -331,7 +331,7 @@ namespace ServiceStack.Redis
 
             if (Pipeline != null)
             {
-                Pipeline.CompleteLongQueuedCommand(ReadInt);
+                Pipeline.CompleteLongQueuedCommand(()=>(long)ReadInt());
                 return default(long);
             }
             return ReadLong();
@@ -509,7 +509,7 @@ namespace ServiceStack.Redis
             ExpectWord("QUEUED");
         }
 
-		public long ReadInt()
+        public int ReadInt()
         {
             int c = SafeReadByte();
             if (c == -1)

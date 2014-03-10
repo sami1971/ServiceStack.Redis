@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A911D139-1876-4E50-80E9-CD3F2F654B62}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{F278D4AB-4730-4720-B08E-FE5E31564D9E};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ServiceStack.Redis.Android</RootNamespace>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>ServiceStack.Redis.Android</AssemblyName>
+    <TargetFrameworkVersion>v4.4</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants>__MOBILE__;__ANDROID__;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Generic\ManagedListGeneric.cs" />
+    <Compile Include="Generic\QueuedRedisTypedCommand.cs" />
+    <Compile Include="Generic\RedisClientHash.Generic.cs" />
+    <Compile Include="Generic\RedisClientList.Generic.cs" />
+    <Compile Include="Generic\RedisClientSet.Generic.cs" />
+    <Compile Include="Generic\RedisClientsManagerExtensionsGeneric.cs" />
+    <Compile Include="Generic\RedisClientSortedSet.Generic.cs" />
+    <Compile Include="Generic\RedisTypedClient.cs" />
+    <Compile Include="Generic\RedisTypedClient_App.cs" />
+    <Compile Include="Generic\RedisTypedClient_Hash.cs" />
+    <Compile Include="Generic\RedisTypedClient_List.cs" />
+    <Compile Include="Generic\RedisTypedClient_Set.cs" />
+    <Compile Include="Generic\RedisTypedClient_SortedSet.cs" />
+    <Compile Include="Generic\RedisTypedCommandQueue.cs" />
+    <Compile Include="Generic\RedisTypedPipeline.cs" />
+    <Compile Include="Generic\RedisTypedTransaction.cs" />
+    <Compile Include="Messaging\MessageHandlerWorker.cs" />
+    <Compile Include="Messaging\RedisMessageFactory.cs" />
+    <Compile Include="Messaging\RedisMessageProducer.cs" />
+    <Compile Include="Messaging\RedisMessageQueueClient.cs" />
+    <Compile Include="Messaging\RedisMessageQueueClientFactory.cs" />
+    <Compile Include="Messaging\RedisMqHost.cs" />
+    <Compile Include="Messaging\RedisMqHostPool.cs" />
+    <Compile Include="Messaging\RedisMqServer.cs" />
+    <Compile Include="Messaging\RedisTransientMessageFactory.cs" />
+    <Compile Include="Messaging\RedisTransientMessageService.cs" />
+    <Compile Include="Messaging\WorkerStatus.cs" />
+    <Compile Include="Pipeline\QueuedRedisCommand.cs" />
+    <Compile Include="Pipeline\QueuedRedisOperation.cs" />
+    <Compile Include="Pipeline\RedisAllPurposePipeline.cs" />
+    <Compile Include="Pipeline\RedisCommand.cs" />
+    <Compile Include="Pipeline\RedisCommandQueue.cs" />
+    <Compile Include="Pipeline\RedisPipelineCommand.cs" />
+    <Compile Include="Pipeline\RedisQueueCompletableOperation.cs" />
+    <Compile Include="Support\Locking\DisposableDistributedLock.cs" />
+    <Compile Include="Support\Locking\DistributedLock.cs" />
+    <Compile Include="Support\Locking\IDistributedLock.cs" />
+    <Compile Include="Support\Locking\ILockingStrategy.cs" />
+    <Compile Include="Support\Locking\NoLockingStrategy.cs" />
+    <Compile Include="Support\Locking\ReaderWriterLockingStrategy.cs" />
+    <Compile Include="Support\Locking\ReadLock.cs" />
+    <Compile Include="Support\Locking\WriteLock.cs" />
+    <Compile Include="Support\Queue\Implementation\RedisChronologicalWorkQueue.cs" />
+    <Compile Include="Support\Queue\Implementation\RedisSequentialWorkQueue.cs" />
+    <Compile Include="Support\Queue\Implementation\RedisSequentialWorkQueue.Locks.cs" />
+    <Compile Include="Support\Queue\Implementation\RedisSimpleWorkQueue.cs" />
+    <Compile Include="Support\Queue\Implementation\RedisWorkQueue.cs" />
+    <Compile Include="Support\Queue\Implementation\SequentialData.cs" />
+    <Compile Include="Support\Queue\Implementation\SerializingRedisClient.cs" />
+    <Compile Include="Support\Queue\Implementation\SerializingRedisClientFactory.cs" />
+    <Compile Include="Support\Queue\IChronologicalWorkQueue.cs" />
+    <Compile Include="Support\Queue\ISequentialData.cs" />
+    <Compile Include="Support\Queue\ISequentialWorkQueue.cs" />
+    <Compile Include="Support\Queue\ISimpleWorkQueue.cs" />
+    <Compile Include="Support\ConsistentHash.cs" />
+    <Compile Include="Support\IOrderedDictionary.cs" />
+    <Compile Include="Support\ISerializer.cs" />
+    <Compile Include="Support\ObjectSerializer.cs" />
+    <Compile Include="Support\OptimizedObjectSerializer.cs" />
+    <Compile Include="Support\OrderedDictionary.cs" />
+    <Compile Include="Support\RedisNamespace.cs" />
+    <Compile Include="Support\SerializedObjectWrapper.cs" />
+    <Compile Include="Transaction\RedisTransaction.cs" />
+    <Compile Include="Transaction\RedisTransactionFailedException.cs" />
+    <Compile Include="BasicRedisClientManager.cs" />
+    <Compile Include="BasicRedisClientManager.ICacheClient.cs" />
+    <Compile Include="BufferPool.cs" />
+    <Compile Include="Commands.cs" />
+    <Compile Include="ConnectionUtils.cs" />
+    <Compile Include="IRedisClientFactory.cs" />
+    <Compile Include="IRedisFailover.cs" />
+    <Compile Include="PooledRedisClientManager.cs" />
+    <Compile Include="PooledRedisClientManager.Disposable.cs" />
+    <Compile Include="PooledRedisClientManager.ICacheClient.cs" />
+    <Compile Include="RedisCacheClientFactory.cs" />
+    <Compile Include="RedisClient.cs" />
+    <Compile Include="RedisClient.ICacheClient.cs" />
+    <Compile Include="RedisClient_Hash.cs" />
+    <Compile Include="RedisClient_List.cs" />
+    <Compile Include="RedisClient_Set.cs" />
+    <Compile Include="RedisClient_Slowlog.cs" />
+    <Compile Include="RedisClient_SortedSet.cs" />
+    <Compile Include="RedisClientFactory.cs" />
+    <Compile Include="RedisClientHash.cs" />
+    <Compile Include="RedisClientList.cs" />
+    <Compile Include="RedisClientManagerCacheClient.cs" />
+    <Compile Include="RedisClientManagerConfig.cs" />
+    <Compile Include="RedisClientSet.cs" />
+    <Compile Include="RedisClientsManagerExtensions.cs" />
+    <Compile Include="RedisClientSortedSet.cs" />
+    <Compile Include="RedisEndpoint.cs" />
+    <Compile Include="RedisException.cs" />
+    <Compile Include="RedisExtensions.cs" />
+    <Compile Include="RedisLock.cs" />
+    <Compile Include="RedisNativeClient.cs" />
+    <Compile Include="RedisNativeClient_Utils.cs" />
+    <Compile Include="RedisPipeline.cs" />
+    <Compile Include="RedisResponseException.cs" />
+    <Compile Include="RedisSubscription.cs" />
+    <Compile Include="ShardedConnectionPool.cs" />
+    <Compile Include="ShardedRedisClientManager.cs" />
+    <Compile Include="UtilExtensions.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ServiceStack.Text\src\ServiceStack.Text.Android\ServiceStack.Text.Android\ServiceStack.Text.Android.csproj">
+      <Project>{56838CD4-8EBC-4860-A3E1-1697875BBC61}</Project>
+      <Name>ServiceStack.Text.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ServiceStack\src\ServiceStack.Common.Android\ServiceStack.Common.Android.csproj">
+      <Project>{BEA92E9F-00B1-4923-BD81-7F3A9CA24408}</Project>
+      <Name>ServiceStack.Common.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\ServiceStack\src\ServiceStack.Interfaces.Android\ServiceStack.Interfaces.Android.csproj">
+      <Project>{05A5DDBF-A1A2-4B28-9FF0-C07060A8AEFC}</Project>
+      <Name>ServiceStack.Interfaces.Android</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

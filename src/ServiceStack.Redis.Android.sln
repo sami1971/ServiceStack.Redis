@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStack.Redis.Android", "ServiceStack.Redis\ServiceStack.Redis.Android.csproj", "{A911D139-1876-4E50-80E9-CD3F2F654B62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStack.Text.Android", "..\..\ServiceStack.Text\src\ServiceStack.Text.Android\ServiceStack.Text.Android\ServiceStack.Text.Android.csproj", "{56838CD4-8EBC-4860-A3E1-1697875BBC61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStack.Common.Android", "..\..\ServiceStack\src\ServiceStack.Common.Android\ServiceStack.Common.Android.csproj", "{BEA92E9F-00B1-4923-BD81-7F3A9CA24408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceStack.Interfaces.Android", "..\..\ServiceStack\src\ServiceStack.Interfaces.Android\ServiceStack.Interfaces.Android.csproj", "{05A5DDBF-A1A2-4B28-9FF0-C07060A8AEFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05A5DDBF-A1A2-4B28-9FF0-C07060A8AEFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05A5DDBF-A1A2-4B28-9FF0-C07060A8AEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05A5DDBF-A1A2-4B28-9FF0-C07060A8AEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05A5DDBF-A1A2-4B28-9FF0-C07060A8AEFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56838CD4-8EBC-4860-A3E1-1697875BBC61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56838CD4-8EBC-4860-A3E1-1697875BBC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56838CD4-8EBC-4860-A3E1-1697875BBC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56838CD4-8EBC-4860-A3E1-1697875BBC61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A911D139-1876-4E50-80E9-CD3F2F654B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A911D139-1876-4E50-80E9-CD3F2F654B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A911D139-1876-4E50-80E9-CD3F2F654B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A911D139-1876-4E50-80E9-CD3F2F654B62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEA92E9F-00B1-4923-BD81-7F3A9CA24408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA92E9F-00B1-4923-BD81-7F3A9CA24408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA92E9F-00B1-4923-BD81-7F3A9CA24408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA92E9F-00B1-4923-BD81-7F3A9CA24408}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = ServiceStack.Redis\ServiceStack.Redis.Android.csproj
+	EndGlobalSection
+EndGlobal

@@ -125,7 +125,7 @@ namespace ServiceStack.Redis.Messaging
             if (mqHosts == null)
             {
                 if (mqHostsBuilder.Count == 0)
-                    throw new ConfigurationException("No Handler's were registered.");
+                    throw new Exception("No Handler's were registered.");
 
                 mqHosts = mqHostsBuilder.ToArray();
             }

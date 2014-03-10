@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsoleTester/Program.cs">
+    <Files>
+      <File FileName="../tests/ServiceStack.Redis.Tests/Benchmarks/DoubleSerializationBenchmarks.cs" Line="1" Column="1" />
+      <File FileName="TestMqHost/Program.cs" Line="1" Column="1" />
+      <File FileName="ServiceStack.Redis/RedisClient.ICacheClient.cs" Line="1" Column="1" />
+      <File FileName="ConsoleTester/Program.cs" Line="34" Column="24" />
+      <File FileName="ServiceStack.Redis/RedisClientList.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

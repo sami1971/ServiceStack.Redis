@@ -733,7 +733,7 @@ namespace ServiceStack.Redis
             var ids = this.GetAllItemsFromSet(typeIdsSetKey);
             if (ids.Count > 0)
             {
-                var urnKeys = ids.ConvertAll(UrnKey<T>);
+                var urnKeys = ids.ConvertAll<string>(UrnKey<T>);
                 this.RemoveEntry(urnKeys.ToArray());
                 this.Remove(typeIdsSetKey);
             }
